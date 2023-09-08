@@ -9,13 +9,13 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 // Add CSS loaders and babel to webpack.
 module.exports = () => {
   return {
-    mode: 'development',
+    mode: 'production',
     entry: {
       main: './src/js/index.js',
       install: './src/js/install.js'
     },
     output: {
-      filename: '[name].bundle.js',
+      filename: '[name].js',
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
