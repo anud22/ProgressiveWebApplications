@@ -31,7 +31,6 @@ export default class {
         content = data.line;
       }
       this.editor.setValue(content || localData || header);
-      console.log("9909");
     });
 
     this.editor.on('change', () => {
